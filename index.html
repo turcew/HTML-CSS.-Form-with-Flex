@@ -9,42 +9,67 @@
   <body>
     <h1>CREATE AN ACCOUNT</h1>
     <h2>We always keep your name and email address private.</h2>
+
     <form action="">
       <div class="input-flex">
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="text" placeholder="Display name" />
-        <input type="text" placeholder="Email Address" />
-        <input type="text" placeholder="Password" />
-        <input type="text" placeholder="Password Confirmation" />
+        <label>
+          <input type="text" placeholder="First name" />
+        </label>
+        <label>
+          <input type="text" placeholder="Last name" />
+        </label>
+        <label>
+          <input type="text" placeholder="Display name" />
+        </label>
+        <label>
+          <input type="email" placeholder="Email Address" />
+        </label>
+        <label>
+          <input type="password" placeholder="Password" />
+        </label>
+        <label>
+          <input type="password" placeholder="Password Confirmation" />
+        </label>
       </div>
-      <fieldset>
-        <input type="radio" class="radio-button" name="type" />
-        <div>
-          <h2>Join As a Buyer</h2>
-          <p>
-            I am looking for a Name, Logo or Tagline for my business, brand or
-            product.
-          </p>
-        </div>
-      </fieldset>
-      <fieldset>
-        <input type="radio" class="radio-button" name="type" />
-        <div>
-          <h2>Join As a Creative or Marketplace seller</h2>
-          <p>
-            I plan to submit name ideas, Logo designs or sell names in Domain
-            Marketplace.
-          </p>
-        </div>
-      </fieldset>
-      <div class="marketing">
-        <p>
-          <input type="checkbox" />
-          Allow Squadhelp to send marketing/promotional offers from time to time
-        </p>
+
+      <!-- Группа выбора типа аккаунта -->
+      <div class="account-type">
+        <label class="radio-option">
+          <fieldset>
+            <input type="radio" name="type" value="buyer" />
+            <div>
+              <h3>Join As a Buyer</h3>
+              <p>
+                I am looking for a Name, Logo or Tagline for my business, brand
+                or product.
+              </p>
+            </div>
+          </fieldset>
+        </label>
+
+        <label class="radio-option">
+          <fieldset>
+            <input type="radio" name="type" value="seller" />
+            <div>
+              <h3>Join As a Creative or Marketplace seller</h3>
+              <p>
+                I plan to submit name ideas, Logo designs or sell names in
+                Domain Marketplace.
+              </p>
+            </div>
+          </fieldset>
+        </label>
       </div>
-      <input class="button1" type="submit" value="Create account" />
+
+      <label class="marketing">
+        <input type="checkbox" />
+        <span
+          >Allow Squadhelp to send marketing/promotional offers from time to
+          time</span
+        >
+      </label>
+
+      <button type="submit" class="button1">Create account</button>
     </form>
   </body>
 </html>
